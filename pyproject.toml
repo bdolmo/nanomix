@@ -1,5 +1,5 @@
 [build-system]
-requires = ["maturin>=0.14,<0.15"]
+requires = ["maturin"]
 build-backend = "maturin"
 
 [project]
@@ -11,8 +11,8 @@ keywords = ["nanopore", "methylation", "deconvolution"]
 authors = [ { name = "Jonathan Broadbent", email = "jonbroad15@gmail.com" },
             { name = "Jared Simpson", email = "jsimpson@oicr.on.ca" } ]
 maintainers = [ { name = "Jonathan Broadbent", email = "jonbroad15@gmail.com" } ]
-dependencies = ["pandas~=1.5.2", "pyranges==0.0.120", "numpy~=1.24.1", "scipy~=1.10.0", "matplotlib", "ray"]
-requires-python = ">=3.7"
+dependencies = ["pandas", "pyranges", "numpy~", "scipy", "matplotlib", "ray"]
+requires-python = ">=3.12"
 classifiers = [
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
